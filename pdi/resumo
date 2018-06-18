@@ -1,0 +1,31 @@
+LEARNING FRAMEWORK
+
+<PARAGRAFO HORRIIIIIIIVELLLL>
+The network is trained in a supervised manner.
+
+The training dataset consists of pairs of noisy and clean images.
+
+The reaction force weight \lambda, the linear filters and influence functions
+for each stage are the parameters that are going to be trained.
+
+The cost function is the usual quadratic loss function, comparing the resulting
+image with its clean version.
+
+Only the result of the last stage is considered.
+
+This training scheme is called joint training by them.
+
+In other words, all parameters from all stages are trained with respect to only
+the final result.
+
+Each layer is greedily pre-trained individually to help deal with the sensitivity
+to parameter initialization in deep models. The output of each stage is compared
+against the clean original image.
+
+Influence functions are represented as weighted linear combination of a family of
+radial basis functions (RBFs). In particular, they consider only Gaussian RBFs.
+
+The linear kernels are defined as linear combinations of Discret Cosine Transform
+(DCT) basis kernels.
+
+The reaction force is constrained to be positive.
