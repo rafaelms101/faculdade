@@ -46,13 +46,13 @@ def is_valid_match(match):
 	for player in match['players']:
 		if not 'leaver_status' in player: return False
 		if not 'player_slot' in player: return False
-		if player['leaver_status'] > 2: return False
+		if player['leaver_status'] != 0: return False
 
 	return True
 
-file = open('dota_data_old.txt', 'a')
+file = open('dota_recent.txt', 'a')
 
-id = 238291736
+id = 3955034928+1
 
 begin = time.time()
 
