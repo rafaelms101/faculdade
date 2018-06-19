@@ -1,4 +1,4 @@
-LEARNING FRAMEWORK
+-LEARNING FRAMEWORK
 
 <PARAGRAFO HORRIIIIIIIVELLLL>
 The network is trained in a supervised manner.
@@ -29,3 +29,11 @@ The linear kernels are defined as linear combinations of Discret Cosine Transfor
 (DCT) basis kernels.
 
 The reaction force is constrained to be positive.
+
+---------------------------------------------------------------------------------
+Numerically, the mainly observable instability is the so-called staircasing effect,
+where a sigmoid edge evolves into piecewise linear segments which are separated
+by jumps. It has already been observed by Posmentier in 1977 [333]. He used an
+equation of Perona–Malik type for numerical simulations of the salinity profiles
+in oceans. Starting from a smoothly increasing initial distribution he reported the
+creation of perturbations which led to a stepwise constant profile after some time.
