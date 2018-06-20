@@ -52,7 +52,7 @@ def is_valid_match(match):
 
 file = open('dota_recent.txt', 'a')
 
-id = 3955034928+1
+id = 3954827880+1
 
 begin = time.time()
 
